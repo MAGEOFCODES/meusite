@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Cabaré</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://i.pinimg.com/736x/a0/2e/fb/a02efb0c252a68eacfea3fae13a22847.jpg') no-repeat center fixed, #2b0f1a;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #400d20;
+            padding: 20px;
+            border-radius: 10px;
+            border: 5px solid #ff0033; /* Borda vermelha inicial */
+            box-shadow: 0 0 15px rgba(255, 0, 51, 0.8); /* Efeito neon */
+            transition: all 0.3s ease-in-out; /* Suaviza mudanças */
+        }
+
+        .container:hover {
+            box-shadow: 0 0 25px rgba(255, 0, 51, 1), 
+                        0 0 50px rgba(255, 0, 51, 0.8); /* Aumenta brilho no hover */
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #ffcc00;
+            text-align: center;
+            text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.7);
+        }
+
+        h2 {
+            color: #ff3366;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        .item {
+            margin: 15px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            text-align: justify;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .item img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .qr-code {
+            margin-top: 20px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                padding: 15px;
+                border-width: 3px; /* Bordas menores em telas pequenas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                border-width: 2px;
+                box-shadow: 0 0 10px rgba(255, 0, 51, 0.6);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍸 NOITE NO CABARÉ 🔥</h1>
+        
+        <h2>🍹 DRINKS (Servidos em copos de 300ml)</h2>
+        <div class="item">
+            <img src="https://minhasreceitinhas.com.br/wp-content/uploads/2017/09/Depositphotos_145243295_l-2015-730x365.jpg" alt="Leite de Quenga">
+            <strong>🔹 Leite de Quenga</strong> – Batida de Coco com Vodka – 300ml | <span class="price">R$ 22,89</span>
+            <p>Um clássico tropical direto do nordeste! Leite de coco cremoso, leite condensado e vodka batidos com gelo, resultando em um drink suave, docinho e refrescante. <em>Teor alcoólico: Médio.</em></p>
+        </div>
+        <div class="item">
+            <img src="https://receitadelicia.com.br/wordpress/wp-content/files/receitadelicia.com.br/2024/02/pink-lemonade-uma-explosao-de-frescor-e-sabor-vibrante-para-refrescar-seus-dias-1024x683.webp" alt="Dysgraça Gostosa">
+            <strong>🔹 Dysgraça Gostosa</strong> – Pink Lemonade Sem Álcool – 300ml | <span class="price">R$ 24,33</span>
+            <p>Uma explosão cítrica e adocicada que vai te deixar na vibe certa! Suco de limão siciliano, framboesa e um toque especial de xarope de frutas vermelhas. <br>Zero álcool, 100% gostoso!</p>
+        </div>
+
+        <h2>🍻 PETISCOS DA CASA <br> (Porção ideal para 2 a 3 pessoas)</h2>
+        <div class="item">
+            <img src="https://oqfzr.com/wp-content/uploads/2024/12/Torresmo.webp" alt="Torresmo Crocante">
+            <strong>🔸 CHEGA MAIS</strong> – Torresmo Crocante | <span class="price">R$ 19,90</span>
+            <p>Torresmo do jeito certo: pururuca, sequinho e cheio de sabor! Acompanha molho especial da casa. (Porção: 200g)</p>
+
+        </div>
+        <div class="item">
+            <img src="https://www.santamassa.com.br/wp-content/webp-express/webp-images/uploads/2021/04/SM_BLOG_30_04-scaled-1.jpg.webp" alt="Sex on the Laje">
+            <strong>🔸 SEX ON THE LAJE</strong> – Queijo com Mel e Mostarda | <span class="price">R$ 21,90</span>
+            <p>Cubos de queijo coalho dourados na chapa, servidos com mel e um toque especial de mostarda rústica. Simplesmente viciante! (Porção: 8 cubos)</p>
+        </div>
+        <div class="item">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/fa/11/6e/calabresa-acebolada.jpg" alt="Cabaresa">
+            <strong>🔸 CABARESA</strong> – Calabresa Acebolada | <span class="price">R$ 24,90</span>
+            <p style="text-align: justify;">A clássica calabresa acebolada ganha um toque especial com cebola caramelizada e farofa temperada. O petisco que nunca decepciona! <br> (Porção: 250g de calabresa + 50g de farofa)</p>
+        </div>
+        <div class="item">
+            <img src="https://valefertil.com.br/wpsite2021/wp-content/uploads/2022/04/val_0009_22_-_blog_maio_-_660x372_-_op04_v1.png" alt="Bala Cuspe">
+            <strong>🔸 BALA CUSPE</strong> – Azeitonas Recheadas | <span class="price">R$ 14,90</span>
+            <p>Azeitonas verdes suculentas recheadas com queijo cremoso e ervas finas. <br> O aperitivo perfeito pra abrir os trabalhos! (Porção: 15 unidades)</p>
+        </div>
+        <div class="item">
+            <img src="https://cdn.oceanserver.com.br/lojas/lightisgood-ce/uploads_produto/dadinho-de-tapioca-62b1e29cab790.jpg" alt="Tadafi">
+            <strong>🔸 TADAFI</strong> – Dadinhos de Tapioca com Geleia de Pimenta | <span class="price">R$ 22,90</span>
+            <p>Crocantes por fora, macios por dentro! Cubos de tapioca com queijo coalho, servidos com uma geleia de pimenta de frutas vermelhas que equilibra doçura e picância na medida certa. (Porção: 10 unidades)</p>
+        </div>
+        
+        <div class="qr-code">
+            <p>📲 Acesse nosso cardápio digital:</p>
+            <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://seusite.com/cardapio" alt="QR Code do Cardápio">
+        </div>
+    </div>
+</body>
+</html>
