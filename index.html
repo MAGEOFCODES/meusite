@@ -65,8 +65,23 @@
             margin-bottom: 10px;
         }
 
+        /* Correção do QR Code */
         .qr-code {
             margin-top: 20px;
+            text-align: center; /* Centraliza o texto e a imagem */
+        }
+
+        .qr-code img {
+            width: 150px;  
+            height: 150px;  
+            object-fit: contain;  
+            display: block;  
+            margin: 10px auto;  
+            border-radius: 10px;  
+            background: #fff;  
+            padding: 10px;  
+            border: 2px solid #ff0033; /* Adiciona uma borda vermelha para combinar com o tema */
+            box-shadow: 0 0 10px rgba(255, 0, 51, 0.6); /* Efeito neon sutil */
         }
 
         /* Responsividade */
@@ -84,7 +99,6 @@
                 box-shadow: 0 0 10px rgba(255, 0, 51, 0.6);
             }
         }
-
     </style>
 </head>
 <body>
@@ -108,32 +122,31 @@
             <img src="https://oqfzr.com/wp-content/uploads/2024/12/Torresmo.webp" alt="Torresmo Crocante">
             <strong>🔸 CHEGA MAIS</strong> – Torresmo Crocante | <span class="price">R$ 19,90</span>
             <p>Torresmo do jeito certo: pururuca, sequinho e cheio de sabor! Acompanha molho especial da casa. (Porção: 200g)</p>
+        </div>
+    <div class="item">
+        <img src="https://www.santamassa.com.br/wp-content/webp-express/webp-images/uploads/2021/04/SM_BLOG_30_04-scaled-1.jpg.webp" alt="Sex on the Laje">
+        <strong>🔸 SEX ON THE LAJE</strong> – Queijo com Mel e Mostarda | <span class="price">R$ 21,90</span>
+        <p>Cubos de queijo coalho dourados na chapa, servidos com mel e um toque especial de mostarda rústica. Simplesmente viciante! (Porção: 8 cubos)</p>
+    </div>
+    <div class="item">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/fa/11/6e/calabresa-acebolada.jpg" alt="Cabaresa">
+        <strong>🔸 CABARESA</strong> – Calabresa Acebolada | <span class="price">R$ 24,90</span>
+        <p style="text-align: justify;">A clássica calabresa acebolada ganha um toque especial com cebola caramelizada e farofa temperada. O petisco que nunca decepciona! <br> (Porção: 250g de calabresa + 50g de farofa)</p>
+    </div>
+    <div class="item">
+        <img src="https://valefertil.com.br/wpsite2021/wp-content/uploads/2022/04/val_0009_22_-_blog_maio_-_660x372_-_op04_v1.png" alt="Bala Cuspe">
+        <strong>🔸 BALA CUSPE</strong> – Azeitonas Recheadas | <span class="price">R$ 14,90</span>
+        <p>Azeitonas verdes suculentas recheadas com queijo cremoso e ervas finas. <br> O aperitivo perfeito pra abrir os trabalhos! (Porção: 15 unidades)</p>
+    </div>
+    <div class="item">
+        <img src="https://cdn.oceanserver.com.br/lojas/lightisgood-ce/uploads_produto/dadinho-de-tapioca-62b1e29cab790.jpg" alt="Tadafi">
+        <strong>🔸 TADAFI</strong> – Dadinhos de Tapioca com Geleia de Pimenta | <span class="price">R$ 22,90</span>
+        <p>Crocantes por fora, macios por dentro! Cubos de tapioca com queijo coalho, servidos com uma geleia de pimenta de frutas vermelhas que equilibra doçura e picância na medida certa. (Porção: 10 unidades)</p>
+    </div>
 
-        </div>
-        <div class="item">
-            <img src="https://www.santamassa.com.br/wp-content/webp-express/webp-images/uploads/2021/04/SM_BLOG_30_04-scaled-1.jpg.webp" alt="Sex on the Laje">
-            <strong>🔸 SEX ON THE LAJE</strong> – Queijo com Mel e Mostarda | <span class="price">R$ 21,90</span>
-            <p>Cubos de queijo coalho dourados na chapa, servidos com mel e um toque especial de mostarda rústica. Simplesmente viciante! (Porção: 8 cubos)</p>
-        </div>
-        <div class="item">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/fa/11/6e/calabresa-acebolada.jpg" alt="Cabaresa">
-            <strong>🔸 CABARESA</strong> – Calabresa Acebolada | <span class="price">R$ 24,90</span>
-            <p style="text-align: justify;">A clássica calabresa acebolada ganha um toque especial com cebola caramelizada e farofa temperada. O petisco que nunca decepciona! <br> (Porção: 250g de calabresa + 50g de farofa)</p>
-        </div>
-        <div class="item">
-            <img src="https://valefertil.com.br/wpsite2021/wp-content/uploads/2022/04/val_0009_22_-_blog_maio_-_660x372_-_op04_v1.png" alt="Bala Cuspe">
-            <strong>🔸 BALA CUSPE</strong> – Azeitonas Recheadas | <span class="price">R$ 14,90</span>
-            <p>Azeitonas verdes suculentas recheadas com queijo cremoso e ervas finas. <br> O aperitivo perfeito pra abrir os trabalhos! (Porção: 15 unidades)</p>
-        </div>
-        <div class="item">
-            <img src="https://cdn.oceanserver.com.br/lojas/lightisgood-ce/uploads_produto/dadinho-de-tapioca-62b1e29cab790.jpg" alt="Tadafi">
-            <strong>🔸 TADAFI</strong> – Dadinhos de Tapioca com Geleia de Pimenta | <span class="price">R$ 22,90</span>
-            <p>Crocantes por fora, macios por dentro! Cubos de tapioca com queijo coalho, servidos com uma geleia de pimenta de frutas vermelhas que equilibra doçura e picância na medida certa. (Porção: 10 unidades)</p>
-        </div>
-        
         <div class="qr-code">
             <p>📲 Acesse nosso cardápio digital:</p>
-            <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://seusite.com/cardapio" alt="QR Code do Cardápio">
+            <img src="https://i.imgur.com/dFlXx6Z.jpeg" alt="QR Code do Cardápio">
         </div>
     </div>
 </body>
